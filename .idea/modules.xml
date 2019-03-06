@@ -3,8 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/170816_Handicap.iml" filepath="$PROJECT_DIR$/170816_Handicap.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/fileuploadtest/fileuploadtest.iml" filepath="$PROJECT_DIR$/fileuploadtest/fileuploadtest.iml" />
       <module fileurl="file://$PROJECT_DIR$/hsnarae/hsnarae.iml" filepath="$PROJECT_DIR$/hsnarae/hsnarae.iml" />
       <module fileurl="file://$PROJECT_DIR$/../BlueLineBus/iomlibrarys/iomlibrarys.iml" filepath="$PROJECT_DIR$/../BlueLineBus/iomlibrarys/iomlibrarys.iml" />
       <module fileurl="file://$PROJECT_DIR$/yongin/yongin.iml" filepath="$PROJECT_DIR$/yongin/yongin.iml" />
