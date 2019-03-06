@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_noti_setting"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="kr.or.hsnarae.transporthelp.NotiSettingActivity"
+    android:background="#EAEAEA"
+    android:orientation="vertical"
+    >
+    <!-- Header -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top">
+        <include layout="@layout/activity_title_bar"></include>
+    </FrameLayout>
+
+    <!-- Body -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <!-- 기본 정보 -->
+        <LinearLayout
+            android:id="@+id/layoutMyInfoDefault"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="visible"
+            >
+            <!-- 이름 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="2dp"
+                android:background="#FFFFFF"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="이 름"
+                    android:textColor="#000000"
+                    android:textAlignment="textStart"
+                    android:textSize="22sp"
+                    />
+                <TextView
+                    android:id="@+id/txtMyInfoUserName"
+                    android:layout_width="0dp"
+                    android:layout_weight="3"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="#000000"
+                    android:textAlignment="textStart"
+                    android:textSize="22sp"
+                    />
+            </LinearLayout>
+
+            <!-- 휴대폰 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="2dp"
+                android:background="#FFFFFF"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="전화번호"
+                    android:textColor="#000000"
+                    android:textAlignment="textStart"
+                    android:textSize="22sp"
+                    />
+                <TextView
+                    android:id="@+id/txtMyInfouserPhone"
+                    android:layout_width="0dp"
+                    android:layout_weight="3"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="#000000"
+                    android:textAlignment="textStart"
+                    android:textSize="22sp"
+                    />
+            </LinearLayout>
+
+            <!-- 이메일 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="2dp"
+                android:background="#FFFFFF"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="이메일"
+                    android:textColor="#000000"
+                    android:textAlignment="textStart"
+                    android:textSize="22sp"
+                    />
+                <TextView
+                    android:id="@+id/txtMyInfoUserEmail"
+                    android:layout_width="0dp"
+                    android:layout_weight="3"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="#000000"
+                    android:textAlignment="textStart"
+                    android:textSize="22sp"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- 비밀 번호 입력 -->
+        <LinearLayout
+            android:id="@+id/layoutMyInfoPW"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="2dp"
+            android:background="#FFFFFF"
+            android:orientation="vertical"
+            android:gravity="center_vertical"
+            android:visibility="gone"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="비밀번호를 입력해 주세요"
+                android:textColor="#000000"
+                android:textAlignment="center"
+                android:textSize="22sp"
+                />
+            <!-- 비밀번호 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="#FFFFFF"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    >
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginBottom="2dp"
+                        android:text="비밀번호"
+                        android:textColor="#000000"
+                        android:textSize="18sp"
+                        android:textAlignment="center"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:layout_marginRight="2.5dp"
+                    android:layout_height="match_parent">
+                    <com.beardedhen.androidbootstrap.BootstrapEditText
+                        android:id="@+id/editUserPW"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:maxLength="15"
+                        android:textAlignment="textStart"
+                        android:inputType="textPassword"
+                        android:nextFocusDown="@+id/editReUserPW"
+                        app:bootstrapBrand="success"
+                        app:roundedCorners="true"
+                        app:bootstrapSize="md"
+                        />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <com.beardedhen.androidbootstrap.BootstrapButton
+                style="@style/wrapping_button"
+                android:id="@+id/btnCheckPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="확인"
+                app:bootstrapBrand="warning"
+                app:roundedCorners="true"
+                app:bootstrapSize="lg"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- Bottom -->
+    <FrameLayout
+        android:id="@+id/framlayoutBottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom">
+        <include layout="@layout/activity_menu_bottom"></include>
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="fa_bars">&#xf0c9;</string>
+    <string name="fa_bell_o">&#xf0a2;</string>
+    <string name="fa_random">&#xf074;</string>
+    <string name="fa_sort_desc">&#xf0dd;</string>
+    <string name="fa_sort_asc">&#xf0de;</string>
+    <string name="fa_arrow_circle_o_left">&#xf0a8;</string>
+    <string name="fa_angle_left">&#xf104;</string>
+
+    <string name="fa_chevron_down">&#xf078;</string>
+    <string name="fa_chevron_up">&#xf077;</string>
+
+</resources>

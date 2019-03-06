@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:foursquared="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="#FFFFFF"
+    >
+    <LinearLayout
+        android:layout_width="48dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        >
+
+        <TextView
+            android:id="@+id/btnMenu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:background="@drawable/button_background"
+            android:textSize="24sp"
+            android:textColor="@color/black"
+            android:text="@string/fa_bars"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        >
+        <kr.or.hsnarae.transporthelp.common.widget.SegmentedButton
+            android:id="@+id/segmented"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            foursquared:gradientColorOnStart="#b5b4b4"
+            foursquared:gradientColorOnEnd="#a0a09f"
+            foursquared:gradientColorOffStart="#ff7235"
+            foursquared:gradientColorOffEnd="#f15a22"
+            foursquared:gradientColorSelectedStart="#FFAA00"
+            foursquared:gradientColorSelectedEnd="#FFAA00"
+            foursquared:textStyle="@style/TextViewStyleHeaderButtonBlue"
+            foursquared:strokeColor="#d8511f"
+            foursquared:strokeWidth="1dip"
+            foursquared:cornerRadius="4dip"
+            foursquared:btnPaddingTop="7dip"
+            foursquared:btnPaddingBottom="7dip"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="48dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        >
+        <TextView
+            android:id="@+id/btnNotice"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/button_background"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:textColor="@color/black"
+            android:text="@string/fa_bell_o"
+            />
+    </LinearLayout>
+
+
+</LinearLayout>

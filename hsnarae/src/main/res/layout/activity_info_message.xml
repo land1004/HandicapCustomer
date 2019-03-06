@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_noti_setting"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="kr.or.hsnarae.transporthelp.NotiSettingActivity"
+    android:background="#EAEAEA"
+    android:orientation="vertical"
+    >
+    <!-- Header -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top">
+        <include layout="@layout/activity_title_bar"></include>
+    </FrameLayout>
+
+    <!-- Body -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <!-- 서비스 문의 / 버전 정보 -->
+        <LinearLayout
+            android:id="@+id/layoutFirst"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="visible"
+            >
+            <!-- 첫줄 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="2dp"
+                android:background="#FFFFFF"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/txtFirstTitle"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text=""
+                    android:textColor="#000000"
+                    android:textAlignment="textStart"
+                    android:textSize="22sp"
+                    />
+                <TextView
+                    android:id="@+id/txtFirstNote"
+                    android:layout_width="0dp"
+                    android:layout_weight="3"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="#000000"
+                    android:textAlignment="textStart"
+                    android:textSize="22sp"
+                    />
+            </LinearLayout>
+
+            <!-- 둘째줄 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="10dp"
+                android:background="#FFFFFF"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/txtSecondTitle"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text=""
+                    android:textColor="#000000"
+                    android:textAlignment="textStart"
+                    android:textSize="22sp"
+                    />
+                <TextView
+                    android:id="@+id/txtSecondNote"
+                    android:layout_width="0dp"
+                    android:layout_weight="3"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="#000000"
+                    android:textAlignment="textStart"
+                    android:textSize="22sp"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- 이용안내 -->
+        <LinearLayout
+            android:id="@+id/layoutSecond"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:background="@drawable/viewbox_bg"
+            >
+            <WebView
+                android:id="@+id/webInfoUse"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+            </WebView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

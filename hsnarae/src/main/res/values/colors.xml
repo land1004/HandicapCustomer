@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="custom_default_fill">#33bbaa</color>
+    <color name="custom_default_edge">#119999</color>
+    <color name="custom_active_fill">#119999</color>
+    <color name="custom_active_edge">#008888</color>
+    <color name="custom_disabled_fill">#8833bbaa</color>
+    <color name="custom_disabled_edge">#bb33bbaa</color>
+
+    <color name="white">#ffffffff</color>
+    <color name="black">#ff000000</color>
+    <color name="red">#ffff0000</color>
+    <color name="timecolor">#a33d3d</color>
+    <color name="transcolor">#00000000</color>
+    <color name="VerInfo">#222222</color>
+    <color name="CYAN">#ff00ffff</color>
+    <color name="titleTop">#32d3ff</color>
+    <color name="txtbox">#9e5200</color>
+    <color name="Redbootom">#ff3737</color>
+    <color name="Bluebootom">#65ddff</color>
+    <color name="max">#ff3737</color>
+    <color name="min">#65ddff</color>
+    <color name="houseiconclick">#41a7c9</color>
+    <color name="subTitle">#6782b8</color>
+    <color name="gray">#6a6a6a</color>
+
+    <color
+        name="white_">#fff</color>
+    <color
+        name="purple_start">#9b256b</color>
+    <color
+        name="purple_end">#5d2761</color>
+
+    <!-- 427BBA, 0f93b8 -->
+    <color
+        name="blue_start">#0f93b8</color>
+    <color
+        name="blue_end">#0f93b8</color>
+    <color
+        name="lgrey_start">#BFC0C0</color>
+    <color
+        name="lgrey_end">#AEB2B7</color>
+    <color
+        name="dgrey_start">#4E4F50</color>
+    <color
+        name="dgrey_end">#2C3137</color>
+    <color
+        name="item_grey_start">#B4B8BA</color>
+    <color
+        name="item_grey_end">#62707C</color>
+    <color
+        name="black_start">#333333</color>
+    <color
+        name="black_end">#181818</color>
+    <color
+        name="grey_start">#CBCBCB</color>
+    <color
+        name="grey_end">#8C9DAE</color>
+    <color
+        name="blue_badges_mayor">#095b72</color>
+    <color
+        name="vlgrey">#EEEEEE</color>
+    <color
+        name="color_score_list_adapter_highlight">#EEEEEE</color>
+    <color
+        name="color_score_mayor_section_background">#DDDDDD</color>
+    <color
+        name="color_bright_green">#a6da00</color>
+    <color
+        name="tip_detail_actions_background">#c7c7c7</color>
+    <color
+        name="user_details_activity_general">#FF555555</color>
+    <color
+        name="transparent">#00000000</color>
+</resources>

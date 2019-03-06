@@ -1,0 +1,69 @@
+<resources>
+    <string name="app_name">화성나래</string>
+    <string name="naver_client_key">c0F4irztqHLfi19WE0mB</string>
+    <string name="naver_secret_key">JgNYbJyWIN</string>
+
+    <string name="daum_map_kye">a0f49716120a9cbd5a87056eb64d453a</string>
+    <string name="fcm_servcer_key">AAAAI4aIelY:APA91bFJno0iK7uw4Jet-aBnEVg6GP1iF0BKC1iZ-6LCPELGQzzbINaMOBlr-2473Yqp1YnJsjxQVmSO_p39IW-stXF8_FJTz_Z-LnYYqt4PAFpDlmL2zXVGGwWB1B5ENjH4gzFB-QKZ</string>
+
+    <string name="str_done">완료</string>
+    <string name="booking_order">예약 배차가 접수되었습니다. 상담원 확인 후 차량 배차 시 문자 발송되며, 나의 배차이용 이력에서 확인하실 수 있습니다</string>
+    <string name="call_wait">배차가능한 차량을 검색 중입니다. \n잠시만 기다려 주십시요.</string>
+    <string name="call_cancel">지금 가까운 차량을 찾고 있습니다.\n정말 취소하시겠습니까?</string>
+    <string name="call_alloc_failed">지금은 배차가능한 차량이 없습니다.\n잠시후 다시 시도하여 주십시오</string>
+    <string name="call_canceled">배차가 취소되었습니다.</string>
+
+    <string name="notisetting">새로운 공지사항이 있는 경우 알려드립니다.\n공지사항 알림을 원하지 않는 경우 OFF 처리해 주세요</string>
+    <string name="getoff_message">화성나래를 이용해주셔서 감사합니다</string>
+    <string name="callhistory_message">최근 3개월 동안의 배차 이용 이력을 확인할 수 있습니다.\n출발지와 목적지 및 기타 콜 정보가 보여집니다.</string>
+    <string name="phonenum_failed">회원정보 및 휴대폰 번호를 확인해 주십시요.</string>
+    <string name="regreement">개인정보수집에 동의하신 지 5년이 경과하였습니다. 재동의 후 이용해주세요.</string>
+    <string name="passwordchange">비밀번호를 변경하신 지 6개월이 경과하였습니다. 홈페이지를 통해서 비밀번호를 변경해주세요.</string>
+    <string name="passwordfaild">비밀번호를 5회 잘못 입력하셨습니다. 5분 이후 다시 이용해주세요.</string>
+
+    <string name="smart_alloc_msg">즉시배차의 경우 출/도착지역은 화성시 관내만 가능합니다. 시외지역은 상담실로 문의 바랍니다.</string>
+    <string name="reorder">현재 배차가능 차량이 없습니다. 30분 후 다시 요청하여 주시기 바랍니다.</string>
+    <string name="update_noti">신규버전이 있습니다.\n신규버전 업데이트 후 사용하세요.</string>
+    <!--동승인원-->
+    <string-array name="geton_count">
+        <item> 동승인원 없음 </item>
+        <item>1 명</item>
+        <item>2 명</item>
+    </string-array>
+
+    <string name="position_set">지도를 움직여 원하는 위치를 지정하세요.</string>
+    <string name="position_search_addr">주소를 검색중 입니다.</string>
+
+    <!--약관-->
+    <string name="provision_info">화성나래 앱 이용을 위하여\n약관에 동의해 주시기 바랍니다.</string>
+
+    <!--화성나래서비스 서약서-->
+    <string name="provision_view1">http://ctmappitf.hsnarae.or.kr:38080/agree_pledge.jsp</string>
+    <!--서비스 이용약관-->
+    <string name="provision_view2">http://ctmappitf.hsnarae.or.kr:38080/agree_termsOfUse.jsp</string>
+    <!--개인정보 취급방침-->
+    <string name="provision_view3">http://ctmappitf.hsnarae.or.kr:38080/agree_termsOfMembership.jsp</string>
+    <!--위치기반서비스 이용약관-->
+    <string name="provision_view4">http://ctmappitf.hsnarae.or.kr:38080/agree_lbsTermsOfUse.jsp</string>
+    <!--고유식별정보 수집 동의-->
+    <string name="provision_view5">http://ctmappitf.hsnarae.or.kr:38080/agree_useOfResidentRegistrationNm.jsp</string>
+
+    <!-- 휴대폰 인증 -->
+    <string name="certification_info">본인 확인을 위한 인증이며, 기사님과의 연락 수단으로 이용됩니다. 휴대폰 번호를 입력 후 [인증번호 요청] 버튼을 클릭해 주세요</string>
+    <string name="certification_phone">본 앱을 이용하기 위해서는 휴대폰 번호가 필요합니다. 수집된 휴대폰 번호는 본인확인 및 부정 이용 방지를 위한 용도로만 사용됩니다.</string>
+
+    <!--휴대폰국번-->
+    <string-array name="phone_first">
+        <item>010</item>
+        <item>011</item>
+        <item>016</item>
+        <item>017</item>
+        <item>018</item>
+        <item>019</item>
+    </string-array>
+
+    <!-- Error code -->
+    <string name="success">S0000</string>
+    <string name="http_failed">통신이 실패하였습니다.</string>
+
+</resources>

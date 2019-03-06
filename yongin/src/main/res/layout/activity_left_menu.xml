@@ -1,0 +1,177 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/leftBehindMenuScroll" >
+
+    <LinearLayout
+        style="@style/behindMenuScrollContent" >
+        <!-- Header -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/nav_header_height"
+            android:background="@drawable/nav_header_main_bg"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:gravity="bottom"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="4"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/txtLeftSideUserName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="@dimen/nav_header_vertical_spacing"
+                        android:paddingLeft="@dimen/activity_vertical_margin"
+                        android:text=""
+                        android:textColor="@color/bootstrap_gray"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+                    <TextView
+                        android:id="@+id/txtLeftSideUserNumber"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/activity_vertical_margin"
+                        android:text=""
+                        android:textColor="@color/bootstrap_gray_light"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:id="@+id/btnUserSetting"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/settings"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Body menu -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/menuItemCallHistory"
+                style="@style/behindMenuItemTitle"
+                android:text="나의 이용 내역" />
+            <TextView
+                android:id="@+id/menuItemBookmark"
+                style="@style/behindMenuItemTitle"
+                android:text="즐겨찾기" />
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <TextView
+                    android:id="@+id/menuItemInfo"
+                    style="@style/behindMenuItemTitle"
+                    android:text="정보" />
+                <TextView
+                    android:id="@+id/menuItemInfoIcon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:text="@string/fa_chevron_down"
+                    android:textSize="22sp"
+                    android:textColor="#000000"
+                    android:layout_gravity="right"
+                    />
+            </FrameLayout>
+                <LinearLayout
+                    android:id="@+id/layoutItemInfo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:orientation="vertical"
+                    android:visibility="gone"
+                    >
+                    <TextView
+                        android:id="@+id/infoNotisetting"
+                        style="@style/behindMenuItemLabel"
+                        android:text="공지사항알림설정" />
+                    <TextView
+                        android:id="@+id/infoUseNote"
+                        style="@style/behindMenuItemLabel"
+                        android:text="이용안내" />
+                    <TextView
+                        android:id="@+id/infoService"
+                        style="@style/behindMenuItemLabel"
+                        android:text="서비스문의" />
+                    <TextView
+                        android:id="@+id/infoVersion"
+                        style="@style/behindMenuItemLabel"
+                        android:text="버전정보" />
+                </LinearLayout>
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <TextView
+                    android:id="@+id/menuItemEtc"
+                    style="@style/behindMenuItemTitle"
+                    android:text="기타" />
+                <TextView
+                    android:id="@+id/menuItemEtcIcon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:text="@string/fa_chevron_down"
+                    android:textSize="22sp"
+                    android:textColor="#000000"
+                    android:layout_gravity="right"
+                    />
+            </FrameLayout>
+                <LinearLayout
+                    android:id="@+id/layoutItemEtc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:orientation="vertical"
+                    android:visibility="gone"
+                    >
+                    <TextView
+                        android:id="@+id/etcMenu1"
+                        style="@style/behindMenuItemLabel"
+                        android:text="서비스 이용 약관" />
+                    <TextView
+                        android:id="@+id/etcMenu2"
+                        style="@style/behindMenuItemLabel"
+                        android:text="개인정보 취급방침" />
+                    <TextView
+                        android:id="@+id/etcMenu3"
+                        style="@style/behindMenuItemLabel"
+                        android:text="위치기반 서비스 이용 약관" />
+                    <TextView
+                        android:id="@+id/etcMenu4"
+                        style="@style/behindMenuItemLabel"
+                        android:text="서약서" />
+                    <TextView
+                        android:id="@+id/etcMenu5"
+                        style="@style/behindMenuItemLabel"
+                        android:text="고유식별정보 수집동의" />
+                </LinearLayout>
+
+        </LinearLayout>
+
+        <!--
+        <ExpandableListView
+            android:id="@+id/expandedListView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            >
+        </ExpandableListView>
+        -->
+    </LinearLayout>
+</ScrollView>

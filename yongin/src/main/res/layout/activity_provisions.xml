@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_provisions"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="kr.or.yongin.transporthelp.ProvisionsActivity"
+    android:background="#EAEAEA"
+    android:orientation="vertical">
+
+    <!-- Header -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top">
+        <include layout="@layout/activity_title_bar"></include>
+    </FrameLayout>
+
+    <!-- Body -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"
+            android:layout_marginTop="2dp"
+            android:background="#FF9756"
+            android:gravity="center_vertical"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/provision_info"
+                android:textColor="#FFFFFF"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4"
+            android:orientation="vertical">
+
+            <!-- 용인누리 서비스 서약서 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="5dp"
+                android:background="#FFFFFF"
+                android:orientation="horizontal"
+                >
+                <CheckBox
+                    android:id="@+id/checkProvision1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="2.5dp"
+                    android:layout_marginBottom="2.5dp"
+                    android:layout_marginLeft="5dp"
+                    android:button="@drawable/btn_radio_"
+                    />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="4"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="2.5dp"
+                    android:layout_marginBottom="2.5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:gravity="center_vertical"
+                    android:text="용인교통약자서비스 서약서 동의"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    android:textAlignment="viewStart"
+                    />
+                <com.beardedhen.androidbootstrap.BootstrapButton
+                    style="@style/wrapping_button"
+                    android:id="@+id/btnProvision1"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:text="보기"
+                    app:bootstrapBrand="warning"
+                    app:roundedCorners="true"
+                    app:bootstrapSize="md"
+                    />
+            </LinearLayout>
+
+            <!-- 서비스 이용약관 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="5dp"
+                android:background="#FFFFFF"
+                android:orientation="horizontal"
+                >
+                <CheckBox
+                    android:id="@+id/checkProvision2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="2.5dp"
+                    android:layout_marginBottom="2.5dp"
+                    android:layout_marginLeft="5dp"
+                    android:button="@drawable/btn_radio_"
+                    />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="4"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="2.5dp"
+                    android:layout_marginBottom="2.5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:gravity="center_vertical"
+                    android:text="서비스 이용약관 동의"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    android:textAlignment="viewStart"
+                    />
+                <com.beardedhen.androidbootstrap.BootstrapButton
+                    style="@style/wrapping_button"
+                    android:id="@+id/btnProvision2"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:text="보기"
+                    app:bootstrapBrand="warning"
+                    app:roundedCorners="true"
+                    app:bootstrapSize="md"
+                    />
+            </LinearLayout>
+
+            <!-- 개인정보 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="5dp"
+                android:background="#FFFFFF"
+                android:orientation="horizontal"
+                >
+                <CheckBox
+                    android:id="@+id/checkProvision3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="2.5dp"
+                    android:layout_marginBottom="2.5dp"
+                    android:layout_marginLeft="5dp"
+                    android:button="@drawable/btn_radio_"
+                    />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="4"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="2.5dp"
+                    android:layout_marginBottom="2.5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:gravity="center_vertical"
+                    android:text="개인정보 취급 방침에 동의"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    android:textAlignment="viewStart"
+                    />
+                <com.beardedhen.androidbootstrap.BootstrapButton
+                    style="@style/wrapping_button"
+                    android:id="@+id/btnProvision3"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:text="보기"
+                    app:bootstrapBrand="warning"
+                    app:roundedCorners="true"
+                    app:bootstrapSize="md"
+                    />
+            </LinearLayout>
+
+            <!-- 위치기반 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="5dp"
+                android:background="#FFFFFF"
+                android:orientation="horizontal"
+                >
+                <CheckBox
+                    android:id="@+id/checkProvision4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="2.5dp"
+                    android:layout_marginBottom="2.5dp"
+                    android:layout_marginLeft="5dp"
+                    android:button="@drawable/btn_radio_"
+                    />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="4"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="2.5dp"
+                    android:layout_marginBottom="2.5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:gravity="center_vertical"
+                    android:text="위치기반서비스 이용약관에 동의"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    android:textAlignment="viewStart"
+                    />
+                <com.beardedhen.androidbootstrap.BootstrapButton
+                    style="@style/wrapping_button"
+                    android:id="@+id/btnProvision4"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:text="보기"
+                    app:bootstrapBrand="warning"
+                    app:roundedCorners="true"
+                    app:bootstrapSize="md"
+                    />
+            </LinearLayout>
+
+            <!-- 고유식별정보 수집 동의 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="5dp"
+                android:background="#FFFFFF"
+                android:orientation="horizontal"
+                >
+                <CheckBox
+                    android:id="@+id/checkProvision5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="2.5dp"
+                    android:layout_marginBottom="2.5dp"
+                    android:layout_marginLeft="5dp"
+                    android:button="@drawable/btn_radio_"
+                    />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="4"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="2.5dp"
+                    android:layout_marginBottom="2.5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:gravity="center_vertical"
+                    android:text="고유식별정보 수집 동의"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    android:textAlignment="viewStart"
+                    />
+                <com.beardedhen.androidbootstrap.BootstrapButton
+                    style="@style/wrapping_button"
+                    android:id="@+id/btnProvision5"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:text="보기"
+                    app:bootstrapBrand="warning"
+                    app:roundedCorners="true"
+                    app:bootstrapSize="md"
+                    />
+            </LinearLayout>
+
+            <!-- 전체동의 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="5dp"
+                android:background="#FFFFFF"
+                android:orientation="horizontal"
+                >
+                <CheckBox
+                    android:id="@+id/checkProvisionAll"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="2.5dp"
+                    android:layout_marginBottom="2.5dp"
+                    android:layout_marginLeft="5dp"
+                    android:button="@drawable/btn_radio_"
+                    />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="2.5dp"
+                    android:layout_marginBottom="2.5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:gravity="center_vertical"
+                    android:text="약관 모두 동의"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    android:textAlignment="viewStart"
+                    />
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="2dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="#FFFFFF"
+                >
+
+            </FrameLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Bottom -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom">
+        <include layout="@layout/activity_menu_bottom"></include>
+    </FrameLayout>
+</LinearLayout>

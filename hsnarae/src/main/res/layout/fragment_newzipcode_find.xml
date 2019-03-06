@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_zipcode_find"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="kr.or.hsnarae.transporthelp.NewZipcodeFragment"
+    android:background="#EAEAEA"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="New zipcode ............................"
+        android:textColor="#FFFFFF"
+        android:textSize="28sp"
+        />
+</LinearLayout>
